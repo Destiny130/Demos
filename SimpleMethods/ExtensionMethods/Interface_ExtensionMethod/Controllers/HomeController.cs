@@ -30,7 +30,7 @@ namespace LanguageFeatures.Controllers
 
         public ActionResult Result()
         {
-            ShoppingCart cart = new ShoppingCart
+            IEnumerable<Product> cart = new ShoppingCart
             {
                 Products = new List<Product>
                 {
