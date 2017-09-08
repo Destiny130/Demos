@@ -12,6 +12,7 @@ namespace test.Models
 
     public static class MyExtensionMethod
     {
+        //using this to make this method be a extension method
         public static decimal TotalLength(this ShoppingCart cartParam)
         {
             decimal total = 0;
