@@ -1,0 +1,18 @@
+            var nameList = new Array("Home", "Pos", "Reseller");
+            var length = nameList.length;
+
+            $(function () {
+                $.each(nameList, function (i, item) {
+                    $("." + item).click(function () {
+                        if (this.checked) {
+                            $("#" + item).find("input").attr("checked", true);
+                        }
+                        else {
+                            $("#" + item).find("input").attr("checked", false);
+                        }
+                    });
+                    $("." + item).click(function () {
+                        $("li#" + item).find("input").prop("checked", this.checked);
+                    });
+                });
+            });
