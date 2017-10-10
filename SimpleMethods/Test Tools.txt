@@ -1,1 +1,13 @@
-
+   1. Click a button to change some properties in the page.
+        <script>
+            var i = 0;
+            $("#testbutton").click(function () {
+                i++;
+                if (i % 2 != 0)
+                    ......   //When click is odd, some sentence will execute.
+                else
+                    ......   //Other case.
+            });
+        </script>
+        
+        <body> <button type="button" id="testbutton">test button</button> </body>
